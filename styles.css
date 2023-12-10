@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+html {
+    background-color: rgba(122, 191, 191, .5);
+}
+body {
+    font-family: Montserrat, sans-serif;
+    color: #0D0D0D;
+    background-color: #F2F2F2;
+    min-width: 414px;
+    max-width: 414px;
+    margin: 0 auto;
+}
+nav a {
+    text-decoration: none;
+    font-size: 20px;
+    color:#0D0D0D;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    text-align: center;
+}
+nav ul {
+    font-family: Bebas Neue, regular;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+nav li {
+    padding: 10px;
+}
+nav li:nth-child(odd) {
+    background-color: white;
+    width:22.5%;
+}
+nav li:nth-child(2) {
+    background-color: #EB5428;
+    width:55%;
+}
+
+h1, h2, h3 {
+    font-family: Bebas Neue, regular;
+}
+.form {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:13%;
+    
+}
+.search-input {
+    font-size: 16px;
+    border: 2px solid #EB5428;
+    width:70%;
+}
+.search-button {
+    background-color: #EB5428;
+    border: none;
+    cursor: pointer;
+    width:14%;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+}
+.actions {
+    display: inline-block;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+}
+.actions a {
+    text-decoration: none;
+}
+.actions a:visited {
+    color:#EB5428;
+}
+
+.actions p {
+    color:#EB5428;
+    font-family: Bebas Neue, regular;
+    font-size: 20px;
+}
+img[src="images/street-tacos.png"] {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+main {
+    margin-bottom: 20px;
+}
+main p{
+    margin:0 10px 0 10px;
+}
+h2 {
+    margin-top: 15px;
+    font-size: 30px;
+    text-align: center;
+}
+#details ul {
+    list-style: none;
+    margin: 10px 0 10px 10px;
+}
+#details ul li strong{
+    margin-right: 12px;
+}
+#ingredients ul li {
+    margin: 10px 0 10px 20px;
+}
+#directions ol {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 10px;
+    list-style-position: outside;
+}
+#directions ol li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#side-dishes h2 {
+    padding-bottom: 30px;
+}
+#side-dishes a {
+    text-decoration: none;
+}
+#side-dishes a:visited {
+    color:#0D0D0D;
+}
+#side-dishes {
+    background-color: #7ABFBF;
+    padding: 10px;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+}
+.side-dish {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+}
+.side-dish img {
+    width: 100px;
+    padding-bottom: 40px;
+}
+.side-dish .text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+h3 {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.rating {
+    display: flex;
+}
+
+footer {
+    background-color: white;
+    padding-bottom: 10px;
+}
+footer .actions {
+    margin-left: 10px;
+}
+footer img {
+    width: 200px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+footer p {
+    font-size: 20px;
+    font-family: Bebas Neue, regular;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width:768px) {
+
+body{
+    max-width: 768px;
+    margin: 0 auto;
+}
+
+h1 {
+text-align: left;
+margin-left: 10px;
+}
+main .actions {
+    display: inline-block;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+}
+#details {
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 55px;
+    margin-right: 20px;
+}
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+footer .actions {
+    display: inline-block;
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    margin-top: -150px;
+}
+}
